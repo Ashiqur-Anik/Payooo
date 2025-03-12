@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+  
+<body>
+    <div class="flex justify-center items-center my-2 ">
+        <div class="mockup-phone border-primary h-screen bg-slate-200">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display py-16">
+
+                <div class="text-center bg-white p-3 rounded-xl w-36 mx-auto ">
+                    <span id="my-balance" class="text-2xl font-bold">9500</span><br>Amount Balance
+                </div> <hr class="my-8">
+
+                <div class="flex justify-center gap-10">
+                    <button class="btn text-lg">Add Money</button>
+                    <button class="btn text-lg">Cash Out</button>
+                </div> <hr class="my-8">
+                <div class="card bg-base-100 md:w-96 w-72 py-5 shadow-2xl ">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="fieldset-label font-bold text-base">Amount</label>
+                            <input id="add-amount" type="text" class="input" placeholder="Enter your amount" />
+                            <label class="fieldset-label font-bold text-base mt-2">4 Digit Pin</label>
+                            <input id="add-money-pin" type="password" class="input" placeholder="Enter 4 Digit Pin" />
+                            <button id="add-money-btn"
+                                class="btn btn-primary mt-4 rounded-full font-bold text-lg">Add money</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
