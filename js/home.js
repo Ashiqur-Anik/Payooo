@@ -27,14 +27,15 @@ document.getElementById("cash-out-btn")
             const myInputBalance = document.getElementById('my-balance').innerText;
             const cashOutInputAmount = document.getElementById('Cash-out-amount').value;
 
-            if(myInputBalance > 0 ){
+           
+            const myBalance = parseInt(myInputBalance);
+            const cashOutAmount = parseInt(cashOutInputAmount)
+            
+            const totalBalance = myBalance - cashOutAmount;
+            if(totalBalance < 0 ){
                 alert('Your balance is low')
                 return
             }
-            const myBalance = parseInt(myInputBalance);
-            const cashOutAmount = parseInt(cashOutInputAmount)
-
-            const totalBalance = myBalance - cashOutAmount;
             document.getElementById('my-balance').innerText = totalBalance
         }
         else {
