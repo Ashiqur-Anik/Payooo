@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-  
+
 <body>
     <div class="flex justify-center items-center my-2 ">
         <div class="mockup-phone border-primary h-screen bg-slate-200">
@@ -17,24 +17,46 @@
 
                 <div class="text-center bg-white p-3 rounded-xl w-36 mx-auto ">
                     <span id="my-balance" class="text-2xl font-bold">9500</span><br>Amount Balance
-                </div> <hr class="my-8">
+                </div>
+                <hr class="my-8">
 
                 <div class="flex justify-center gap-10">
-                    <button class="btn text-lg">Add Money</button>
-                    <button class="btn text-lg">Cash Out</button>
-                </div> <hr class="my-8">
-                <div class="card bg-base-100 md:w-96 w-72 py-5 shadow-2xl ">
+                    <button id="add-money-page-btn" class="btn text-lg">Add Money</button>
+                    <button id="cash-out-page-btn" class="btn text-lg">Cash Out</button>
+                </div>
+                <hr class="my-8">
+
+                <!-- start add money section-->
+
+                <div id="add-money-page" class="card bg-base-100 md:w-96 w-72 py-5 shadow-2xl ">
                     <div class="card-body">
                         <fieldset class="fieldset">
                             <label class="fieldset-label font-bold text-base">Amount</label>
                             <input id="add-amount" type="text" class="input" placeholder="Enter your amount" />
                             <label class="fieldset-label font-bold text-base mt-2">4 Digit Pin</label>
                             <input id="add-money-pin" type="password" class="input" placeholder="Enter 4 Digit Pin" />
-                            <button id="add-money-btn"
-                                class="btn btn-primary mt-4 rounded-full font-bold text-lg">Add money</button>
+                            <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full font-bold text-lg">Add
+                                money</button>
                         </fieldset>
                     </div>
                 </div>
+                <!-- end add money section -->
+
+
+                <!-- start cash out section -->
+
+                <div id="cash-out-page" class="hidden card bg-base-100 md:w-96 w-72 py-5 shadow-2xl ">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="fieldset-label font-bold text-base">Amount</label>
+                            <input id="Cash-out-amount" type="text" class="input" placeholder="Enter your amount" />
+                            <label class="fieldset-label font-bold text-base mt-2">4 Digit Pin</label>
+                            <input id="Cash-out-pin" type="password" class="input" placeholder="Enter 4 Digit Pin" />
+                            <button id="cash-out-btn" class="btn btn-primary mt-4 rounded-full font-bold text-lg">Cash Out</button>
+                        </fieldset>
+                    </div>
+                </div>  
+                <!-- end cash out section -->
             </div>
         </div>
     </div>
