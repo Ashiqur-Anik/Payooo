@@ -9,24 +9,33 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-<body> 
-    <div class="hero bg-gray-200 min-h-screen relative">
-        <img class="absolute top-10" src="img/bg.png" alt="">
-        <img class="absolute top-16" src="img/Group.png" alt="">
-        <div class="card bg-base-100 md:w-96 w-72 py-5 shadow-2xl">
-            <div class="card-body">
-                <fieldset class="fieldset">
-                    <label class="fieldset-label font-bold text-base">Mobile Number</label>
-                    <input type="text" class="input" placeholder="Enter your number" />
-                    <label class="fieldset-label font-bold text-base mt-2">4 Digit Pin</label>
-                    <input type="password" class="input" placeholder="Enter 4 Digit Pin" />
-                    <button class="btn btn-primary mt-4 rounded-full font-bold text-lg">Login</button>
-                </fieldset>
+<body>
+    <div class="flex justify-center items-center my-2">
+        <div class="mockup-phone border-primary h-screen bg-slate-200">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display">
+                <div class="hero min-h-screen relative mt-20">
+                    <img class="absolute top-10" src="img/bg.png" alt="">
+                    <img class="absolute top-16" src="img/Group.png" alt="">
+                    <div class="card bg-base-100 md:w-96 w-72 py-5 shadow-2xl">
+                        <div class="card-body">
+                            <fieldset class="fieldset">
+                                <label class="fieldset-label font-bold text-base">Mobile Number</label>
+                                <input type="text" class="input" placeholder="Enter your number" />
+                                <label class="fieldset-label font-bold text-base mt-2">4 Digit Pin</label>
+                                <input type="password" class="input" placeholder="Enter 4 Digit Pin" />
+                                <button class="btn btn-primary mt-4 rounded-full font-bold text-lg">Login</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 
-<script src="js/login.js"></script>
+
+    <script src="js/login.js"></script>
 </body>
 
 </html>
